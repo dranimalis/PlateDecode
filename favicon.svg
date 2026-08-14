@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#101116"/>
+
+  <!-- Indonesian plate -->
+  <rect
+    x="8"
+    y="19"
+    width="48"
+    height="26"
+    rx="5"
+    fill="#f2f2f2"
+  />
+
+  <text
+    x="32"
+    y="36"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13"
+    font-weight="700"
+    fill="#101116"
+  >B 1234</text>
+
+  <rect
+    x="14"
+    y="39"
+    width="36"
+    height="2"
+    rx="1"
+    fill="#d71920"
+  />
+</svg>

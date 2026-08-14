@@ -164,5 +164,3 @@ See [`LICENSE`](LICENSE) for the full license text.
 ---
 
 Made by **Dr_Animalis**
-
-[1]: https://github.com/riyantowibowo/indonesian-vehicle-license-plate-numbers "GitHub - riyantowibowo/indonesian-vehicle-license-plate-numbers: JSON file that contains data for all area codes for vehicle license plate numbers in Indonesia (nopol / plat nomor) · GitHub"

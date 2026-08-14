@@ -1,0 +1,17 @@
+{
+    "general": {
+        "1-1999": "mobil_penumpang",
+        "2000-6999": "sepeda_motor",
+        "7000-7999": "mobil_bus",
+        "8000-8999": "mobil_barang",
+        "9000-9999": "kendaraan_khusus"
+    },
+
+    "polda_metro_jaya": {
+        "1-2999": "mobil_penumpang",
+        "3000-6999": "sepeda_motor",
+        "7000-7999": "mobil_bus",
+        "8000-8999": "mobil_penumpang",
+        "9000-9999": "mobil_barang_kendaraan_khusus"
+    }
+}

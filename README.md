@@ -33,7 +33,7 @@ PlateDecode will process:
 Kode Daerah   : B
 Nomor         : 1234
 Seri          : ABC
-Wilayah       : Jakarta Barat
+Wilayah       : JADETABEK
 Jenis         : 🚗 Mobil Penumpang
 ```
 

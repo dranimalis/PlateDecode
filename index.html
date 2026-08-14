@@ -1,154 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="PlateDecode — Indonesian license plate decoder."
-    >
-
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PlateDecode — Indonesian license plate decoder." />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>PlateDecode — Indonesian Plate Decoder</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
     <main class="container">
 
+        <!-- HEADER -->
         <header>
             <div class="logo">
                 <span>🇮🇩</span>
                 <span>PlateDecode</span>
             </div>
-
-            <p class="subtitle">
-                Indonesian License Plate Decoder
-            </p>
+            <p class="subtitle">Indonesian License Plate Decoder</p>
         </header>
 
+        <!-- DECODER CARD -->
         <section class="decoder-card">
 
             <div class="input-section">
 
-                <label for="plateInput">
-                    Nomor Plat
-                </label>
+                <label for="plateInput">Nomor Plat</label>
 
                 <div class="input-wrapper">
-
                     <input
-                        id="plateInput"
-                        type="text"
-                        placeholder="B 1234 ABC"
-                        maxlength="12"
-                        autocomplete="off"
-                        spellcheck="false"
-                    >
-
-                    <button id="decodeBtn" type="button">
-                        Decode
-                    </button>
-
+                    id="plateInput"
+                    type="text"
+                    placeholder="B 1234 ABC"
+                    maxlength="12"
+                    autocomplete="off"
+                    spellcheck="false"
+                    inputmode="text"
+                    />
+                    <button id="decodeBtn" type="button">Decode</button>
                 </div>
 
                 <div class="examples">
                     <span>Try:</span>
-
-                    <button type="button" data-plate="B 1234 ABC">
-                        B 1234 ABC
-                    </button>
-
-                    <button type="button" data-plate="D 4567 XYZ">
-                        D 4567 XYZ
-                    </button>
-
-                    <button type="button" data-plate="F 1234 AB">
-                        F 1234 AB
-                    </button>
+                    <button type="button" data-plate="B 1234 ABC">B 1234 ABC</button>
+                    <button type="button" data-plate="D 4567 XYZ">D 4567 XYZ</button>
+                    <button type="button" data-plate="F 1234 AB">F 1234 AB</button>
                 </div>
 
                 <p id="error" class="error"></p>
 
             </div>
 
+            <!-- RESULT -->
             <div id="result" class="result hidden">
 
                 <div class="result-header">
-
                     <div>
-                        <span class="result-label">
-                            PLAT TERDETEKSI
-                        </span>
-
-                        <h2 id="resultPlate">
-                            B 1234 ABC
-                        </h2>
+                        <span class="result-label">Plat Terdeteksi</span>
+                        <h2 id="resultPlate">B 1234 ABC</h2>
                     </div>
-
-                    <div class="check">
-                        ✓
-                    </div>
-
+                    <div class="check">✓</div>
                 </div>
 
                 <div class="result-grid">
-
                     <div class="result-item">
                         <span>Kode Daerah</span>
                         <strong id="resultCode">B</strong>
                     </div>
-
                     <div class="result-item">
                         <span>Nomor</span>
                         <strong id="resultNumber">1234</strong>
                     </div>
-
                     <div class="result-item">
                         <span>Seri</span>
                         <strong id="resultSeries">ABC</strong>
                     </div>
-
                     <div class="result-item">
                         <span>Wilayah</span>
                         <strong id="resultRegion">JADETABEK</strong>
                     </div>
-
                     <div class="result-item full">
                         <span>Jenis Kendaraan</span>
-
-                        <strong id="resultVehicle">
-                            🚗 Mobil Penumpang
-                        </strong>
+                        <strong id="resultVehicle">🚗 Mobil Penumpang</strong>
                     </div>
-
                 </div>
 
             </div>
 
         </section>
 
+        <!-- FOOTER -->
         <footer>
-
-            <div class="footer-brand">
-                PlateDecode
-            </div>
-
+            <div class="footer-brand">PlateDecode</div>
             <div class="footer-credit">
                 © <span id="copyrightYear"></span>
                 <strong>Dr_Animalis</strong>
                 · All rights reserved.
             </div>
-
         </footer>
 
     </main>
 
-    <script src="script.js"></script>
-
+    <script src="script.js" defer></script>
 </body>
 </html>

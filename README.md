@@ -58,6 +58,7 @@ PlateDecode/
 │
 ├── data/
 │   ├── kode_daerah.json
+│   ├── kode_diplomatik.json
 │   └── kode_nomer.json
 │
 ├── LICENSE
@@ -107,6 +108,7 @@ PlateDecode uses JSON files for its plate data:
 
 ```text
 data/kode_daerah.json
+data/kode_diplomatik.json
 data/kode_nomer.json
 ```
 
